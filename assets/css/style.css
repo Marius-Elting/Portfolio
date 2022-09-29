@@ -1,16 +1,37 @@
 @font-face {
+    font-family: Poppins-light;
+    src: url("../fonts/Poppins/Poppins-Light.ttf");
+}
+
+@font-face {
     font-family: Poppins-Reg;
     src: url("../fonts/Poppins/Poppins-Regular.ttf");
 }
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url("../fonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* display: flex; */
+    font-family: Poppins-Reg;
+
 }
 
-header{
+/* ==========================
+            header
+========================== */
+header {
     font-family: Poppins-Reg;
     display: flex;
     justify-content: space-between;
@@ -51,3 +72,105 @@ header .contact {
     color: white
 }
 
+/* ==========================
+            Main
+========================== */
+
+.willkommen {
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+/* main .willkommen article {
+    display: flex;
+} */
+
+/* main section div {
+    background: url("./assets/img/IMG-20210911-WA0001.png");
+    height: 70%;
+    width: 10%;
+} */
+
+
+
+main .willkommen img {
+    display: flex;
+    width: 25em;
+    box-shadow: 2rem 2rem #4338ca;
+}
+
+main .willkommen article {
+    display: flex;
+    width: 25em;
+    gap: 0px 10rem;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    flex-direction: column;
+}
+
+main .willkommen article h3 {
+    font-family: Poppins-Light;
+    color: #4338ca;
+    font-size: 1rem;
+    text-align: center;
+}
+
+main .willkommen article h1 {
+    font-family: Poppins-Medium;
+    font-size: 2.5rem;
+}
+
+main .willkommen article p {
+    font-family: Poppins-Light;
+}
+
+main .willkommen .download {
+    background-color: #4338ca;
+    padding: 0.6em 1em;
+    border-radius: 1.3em;
+    color: white;
+    text-decoration: none;
+    width: 10rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* ========
+Ueber mich
+=========== */
+
+main .uebermich {
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+main .uebermich .h1 {
+    font-size: 5rem;
+    font-family: Poppins-SemiBold;
+    width: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 4.9rem;
+    text-align-last:right;
+
+}
+
+main .uebermich .h1 {
+    /* align-self: flex-end; */
+}
+
+main .uebermich .p {
+    width: 30rem;
+}
