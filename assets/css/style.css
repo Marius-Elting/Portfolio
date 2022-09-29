@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Poppins-Reg;
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* display: flex; */
+}
+
+header{
+    font-family: Poppins-Reg;
+    display: flex;
+    justify-content: space-between;
+    justify-content: baseline;
+    gap: 1rem;
+    height: 10vh;
+    width: 100%;
+    align-items: baseline;
+    align-items: center;
+    background: #212525;
+
+}
+
+header .name {
+    color: white;
+    margin-left: 3rem;
+}
+
+header .nav .ulnav {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    margin-right: 3em;
+    color: white;
+    align-items: baseline;
+}
+
+header .nav .ulnav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+header .contact {
+    background-color: #4338ca;
+    padding: 0.4em 2.6em;
+    border-radius: 1.3em;
+    color: white
+}
+
