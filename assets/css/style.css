@@ -28,6 +28,22 @@
 
 }
 
+.mainheadline {
+    font-size: 5rem;
+    font-family: Poppins-SemiBold;
+}
+
+.subheadline {
+    font-family: Poppins-Light;
+    color: #4338ca;
+    font-size: 1rem;
+}
+
+.subheadline:before {
+    content: url("../img/svg/Arrow_1.svg");
+    vertical-align: center;
+}
+
 /* ==========================
             header
 ========================== */
@@ -81,11 +97,14 @@ header .contact {
     /* flex-direction: row; */
     /* align-items: center; */
     width: 100%;
-    height: 80vh;
+    height: 40rem;
     align-items: center;
     justify-content: center;
     gap: 5em;
 }
+
+
+
 
 /* main .willkommen article {
     display: flex;
@@ -118,7 +137,12 @@ main .willkommen article h3 {
     font-family: Poppins-Light;
     color: #4338ca;
     font-size: 1rem;
-    text-align: center;
+
+}
+
+.willkommen h3:before {
+    content: url("../img/svg/Arrow_1.svg");
+    vertical-align: center;
 }
 
 main .willkommen article h1 {
@@ -163,14 +187,336 @@ main .uebermich .h1 {
     display: flex;
     flex-wrap: wrap;
     line-height: 4.9rem;
-    text-align-last:right;
+    text-align-last: right;
 
 }
 
-main .uebermich .h1 {
-    /* align-self: flex-end; */
-}
+/* main .uebermich .h1 {
+    /* align-self: flex-end; 
+} */
 
 main .uebermich .p {
     width: 30rem;
+}
+
+/* =================================================================
+!                           TechStack
+   ================================================================= */
+
+main #TechStack {
+    background-color: #4338ca;
+
+    display: grid;
+    grid-template: 1fr auto/1fr auto 2fr;
+    gap: 2rem;
+    padding: 15vh 0 5vh 0;
+}
+
+main #TechStack h2 {
+    grid-column: 2/3;
+
+    color: white;
+}
+
+main #TechStack img {
+    /* width: 100%; */
+    object-fit: contain;
+}
+
+main #TechStack figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main #TechStack div {
+    display: grid;
+    grid-column: 2/3;
+    grid-template: repeat(3, 1fr)/repeat(7, 1fr);
+    gap: 1rem;
+
+}
+
+main #TechStack figcaption {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    bottom: 50%;
+    transition: 0.5s ease;
+    font-size: 1rem;
+    font-family: Poppins-SemiBold;
+}
+
+main #TechStack img {
+    backface-visibility: hidden;
+    transition: 0.5s ease;
+}
+
+main #TechStack figure:hover>figcaption {
+    position: absolute;
+    transition: 0.5s ease;
+    font-size: 2rem;
+    user-select: none;
+    color: white;
+    opacity: 1;
+    font-family: Poppins-SemiBold;
+}
+
+main #TechStack figure:hover>img {
+    opacity: 50%;
+}
+
+/* =================================================================
+!                           Werdegang
+   ================================================================= */
+
+main #Werdegang {
+    display: grid;
+    grid-template: repeat(8, auto)/0px 2.5fr 2.5fr .0px;
+    gap: 2rem;
+    padding: 10vh 10vw;
+}
+
+main #Werdegang #meineErfahungen {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    color: #4338ca;
+    text-transform: uppercase;
+}
+
+main #Werdegang #meineErfahungen:before {
+    content: url("../img/svg/Arrow_1.svg");
+    vertical-align: center;
+}
+
+main #Werdegang #werdegangh2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 5rem;
+    font-family: Poppins-SemiBold;
+}
+
+main #Werdegang #erfahrungh3 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    font-family: Poppins-SemiBold;
+    font-size: 2.5rem;
+    place-self: end start;
+}
+
+main #Werdegang #erfahrungart1 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+main #Werdegang #erfahrungart2 {
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+main #Werdegang #erfahrungart3 {
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+
+#erfahrungart1,
+#erfahrungart2,
+#erfahrungart3 {
+    background-color: #4338ca;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+#ausbildungart1,
+#ausbildungart2,
+#ausbildungart3 {
+    background-color: #4438ca9c;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+
+main #Werdegang #ausbildungh3 {
+    grid-row: 4/5;
+    grid-column: 3/4;
+    font-family: Poppins-SemiBold;
+    line-height: 100%;
+    vertical-align: bottom;
+    font-size: 2.5rem;
+    place-self: end start;
+}
+
+main #Werdegang #ausbildungart1 {
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+
+main #Werdegang #ausbildungart2 {
+    grid-row: 6/7;
+    grid-column: 3/4;
+}
+
+main #Werdegang #ausbildungart3 {
+    grid-row: 7/8;
+    grid-column: 3/4;
+}
+
+#Werdegang article p:nth-of-type(1) {
+    color: white;
+    font-size: 0.8rem
+}
+
+#Werdegang article h4:nth-of-type(1) {
+    color: white;
+    font-size: 1.2rem;
+    font-family: Poppins-SemiBold;
+}
+
+#Werdegang article p:nth-of-type(2) {
+    color: white;
+    font-size: 0.8rem;
+}
+
+#Werdegang article ul {
+    color: white;
+    font-size: 0.8rem;
+    padding-left: 2rem;
+}
+
+
+
+
+
+#Projects {
+    display: grid;
+    grid-template: auto auto 13rem 13rem 13rem/ 1fr 1fr 1fr;
+    padding: 10vh 10vw;
+    gap: 5rem;
+}
+
+
+#Projects h2 {
+    font-size: 5rem;
+    font-family: Poppins-SemiBold;
+
+}
+
+#Projects div {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#Projects figure {
+    /* background-color: #4338ca; */
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#Projects figure img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Projects figure figcaption {
+    position: absolute;
+    opacity: 0;
+    font-size: 1rem;
+    transition: 0.5s ease;
+    font-size: 1rem;
+    font-family: Poppins-SemiBold;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+
+#Projects figure figcaption p,
+figure figcaption h1 {
+    font-size: inherit;
+
+}
+
+#Projects figure:hover>figcaption {
+    position: absolute;
+    opacity: 1;
+    font-size: 2rem;
+    transition: 0.5s ease;
+    font-size: 2rem;
+    background-color: #4338ca;
+    border-radius: 25px;
+}
+
+
+
+#Testimonials {
+    padding: 10vh 10vw;
+    Display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+#Testimonials h2 {
+    font-size: 5rem;
+    font-family: Poppins-SemiBold;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    align-self: flex-start;
+}
+
+#Testimonials article {
+    display: grid;
+    grid-template: 1fr auto 1fr/ 1fr auto auto 1fr;
+    place-items: center start;
+}
+
+#Testimonials article img:nth-of-type(1) {
+    width: 15rem;
+    height: 15rem;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    border-radius: 100%;
+    box-shadow: 1rem 1rem #4338ca;
+    place-self: center
+}
+
+#Testimonials .anf1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#Testimonials .anf2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#Testimonials p {
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+
+#Testimonials #testi1name {
+    grid-column: 2/5;
+    grid-row: 3/4;
+}
+
+#Testimonials #testi2name {
+    grid-column: 2/5;
+    grid-row: 3/4;
 }
