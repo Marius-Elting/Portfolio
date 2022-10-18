@@ -42,6 +42,7 @@
 .subheadline:before {
     content: url("../img/svg/Arrow_1.svg");
     vertical-align: center;
+    margin-right: 5px;
 }
 
 /* ==========================
